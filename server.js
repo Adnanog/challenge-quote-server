@@ -31,7 +31,7 @@ app.get("/quotes/search", function(request, response) {
   var searchResult = Quotes.filter(item => {
     return (
       item.quote.toLowerCase().includes(searchWord.toLowerCase()) ||
-      item.author.toLowerCase().includes(searchWord.toLowerCase())
+      item.author.toLowerCase().includes(searchWorquoted.toLowerCase())
     );
   });
   response.send(searchResult);
